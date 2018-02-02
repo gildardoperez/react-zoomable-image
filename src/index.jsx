@@ -335,7 +335,7 @@ class ZoomableImage extends Component {
     return (
       <div
         data-name="wrapper"
-        style={{ ...styles.wrapper, width, height, cursor: `url(${zoomed ? magMinus : magPlus}), pointer` }}
+        style={{ ...styles.wrapper, width, height, cursor: `zoom-in` }}
         onMouseDown={(e) => {
           if (!zoomed && !isTouch) {
             this.startZoom([e.nativeEvent.offsetX, e.nativeEvent.offsetY], false);
